@@ -1949,7 +1949,7 @@ if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
     }
 
     if (file) {
-      PDFViewerApplication.open(file);
+      PDFViewerApplication.open(file, {withCredentials: true});
     }
   };
 } else if (PDFJSDev.test('FIREFOX || MOZCENTRAL || CHROME')) {
