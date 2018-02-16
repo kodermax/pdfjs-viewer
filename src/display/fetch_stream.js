@@ -83,7 +83,6 @@ class PDFFetchStreamReader {
     this._isStreamingSupported = !source.disableStream;
     this._isRangeSupported = !source.disableRange;
 
-    this._headers = new Headers({"remote_user": "karpychev"});
     for (let property in this._stream.httpHeaders) {
       let value = this._stream.httpHeaders[property];
       if (typeof value === 'undefined') {
